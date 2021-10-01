@@ -1,0 +1,36 @@
+  .social {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+  }
+  
+  .icon-nets__link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  
+    fill: rgba(175, 177, 184, 1);
+  
+    transition-property: fill, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      fill: var(--primary-white-color);
+      background-color: var(--accent-color);
+    }
+  }
+
+  .social__item {
+    display: block;
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+

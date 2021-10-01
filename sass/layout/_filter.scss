@@ -1,0 +1,17 @@
+.filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    &-item:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+  
+  .filter__item {
+    margin-right: 8px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
