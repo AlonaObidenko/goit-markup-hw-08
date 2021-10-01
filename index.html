@@ -49,6 +49,11 @@
                         +38 096 111 11 11</a>
                     </li>
             </ul>
+            <button class="menu-open">
+                <svg class="menu-open__icon" width="24px" height="16px">
+                    <use href="./images/icons.svg#icon-menu"> </use>
+                </svg>
+            </button>
         </div>
     </header>
 
@@ -139,8 +144,33 @@
                 <ul class="our-team">
 
                     <li class="our-team__item">
+                        <picture>
+                            <source
+                            srcset="
+                                ./images/crew-members/crew-member-1-desktop-x1.jpg 1x,
+                                ./images/crew-members/crew-member-1-desktop-x2.jpg 2x
+                            "
+                            media="(min-width:1200px)"
+                        />
+
+                        <source
+                        srcset="
+                            ./images/crew-members/crew-member-1-tab-x1 1x,
+                            ./images/crew-members/crew-member-1-tab-x2.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                    />
+
+                    <source
+                    srcset="
+                        ./images/crew-members/crew-member-1-mob-x1.jpg 1x,
+                        ./images/crew-members/crew-member-1-mob-x2.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                />
+                <img src="./images/crew-member-1.jpg" alt="Игорь Демьяненко" class="images">
+                        </picture>
                         
-                        <img src="./images/crew-member-1.jpg" alt="Игорь Демьяненко" width="270" height="260" class="images">
                         <div class="our-team__content">
                             <h3 class="our-team__title">Игорь Демьяненко</h3>
                             <p lang="en" class="our-team__text">Product Designer</p>
@@ -183,7 +213,33 @@
                     </li>
 
                     <li class="our-team__item">
-                        <img src="./images/crew-member-2.jpg" alt="Ольга Репина" width="270" height="260" class="images">
+                        <picture>
+                            <source
+                            srcset="
+                                ./images/crew-members/crew-member-2-desktop-x1.jpg 1x,
+                                ./images/crew-members/crew-member-2-desktop-x2.jpg 2x
+                            "
+                            media="(min-width:1200px)"
+                        />
+
+                        <source
+                        srcset="
+                            ./images/crew-members/crew-member-2-tab-x1 1x,
+                            ./images/crew-members/crew-member-2-tab-x2.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                    />
+
+                    <source
+                    srcset="
+                        ./images/crew-members/crew-member-2-mob-x1.jpg 1x,
+                        ./images/crew-members/crew-member-2-mob-x2.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                />
+                <img src="./images/crew-member-2.jpg" alt="Ольга Репина" class="images">
+                        </picture>
+                        
                         <div class="our-team__content">
                             <h3 class="our-team__title">Ольга Репина</h3>
                             <p lang="en" class="our-team__text">Frontend Developer</p>
@@ -225,7 +281,33 @@
                     </li>
 
                     <li class="our-team__item">
-                        <img src="./images/crew-member-3.jpg" alt="Николай Тарасов" width="270" height="260" class="images">
+                        <picture>
+                            <source
+                            srcset="
+                                ./images/crew-members/crew-member-3-desktop-x1.jpg 1x,
+                                ./images/crew-members/crew-member-3-desktop-x2.jpg 2x
+                            "
+                            media="(min-width:1200px)"
+                        />
+
+                        <source
+                        srcset="
+                            ./images/crew-members/crew-member-3-tab-x1 1x,
+                            ./images/crew-members/crew-member-3-tab-x2.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                    />
+
+                    <source
+                    srcset="
+                        ./images/crew-members/crew-member-3-mob-x1.jpg 1x,
+                        ./images/crew-members/crew-member-3-mob-x2.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                />
+                <img src="./images/crew-member-3.jpg" alt="Николай Тарасов" class="images">
+                        </picture>
+                        
                         <div class="our-team__content">
                             <h3 class="our-team__title">Николай Тарасов</h3>
                             <p lang="en" class="our-team__text">Marketing</p>
@@ -266,7 +348,33 @@
                     </li>
 
                     <li class="our-team__item">
-                        <img src="images/crew-member-4.jpg" alt="Михаил Ермаков" width="270" height="260" class="images">
+                        <picture>
+                            <source
+                            srcset="
+                                ./images/crew-members/crew-member-4-desktop-x1.jpg 1x,
+                                ./images/crew-members/crew-member-4-desktop-x2.jpg 2x
+                            "
+                            media="(min-width:1200px)"
+                        />
+
+                        <source
+                        srcset="
+                            ./images/crew-members/crew-member-4-tab-x1 1x,
+                            ./images/crew-members/crew-member-4-tab-x2.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                    />
+
+                    <source
+                    srcset="
+                        ./images/crew-members/crew-member-4-mob-x1.jpg 1x,
+                        ./images/crew-members/crew-member-4-mob-x2.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                />
+                <img src="images/crew-member-4.jpg" alt="Михаил Ермаков" class="images">
+                        </picture>
+                        
                         <div class="our-team__content">
                             <h3 class="our-team__title">Михаил Ермаков</h3>
                             <p lang="en" class="our-team__text">UI Designer</p>
@@ -379,7 +487,7 @@
     <!--Футер-->
     <footer class="footer">
 
-        <div class="container">
+        <div class="container footer">
             <div class="footer-adress">
             <a href="" class="footer__logo logo"> <span class="logo-accent">Web</span><span
                     class="footer__logo--white">Studio</span></a>

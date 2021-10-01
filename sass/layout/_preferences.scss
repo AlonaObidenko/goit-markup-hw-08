@@ -1,4 +1,9 @@
-.preferences {
+.preferences__item {
+  width: 450px;
+}
+
+@media screen and (min-width: 1200) {
+  .preferences {
     display: flex;
   }
   
@@ -9,9 +14,14 @@
       margin-right: 0;
     }
   }
+}
+
 
   .preferences__title {
     width: 270px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 10px;
   
     font-weight: 700;
@@ -23,7 +33,14 @@
   }
   
   .preferences__text {
-    width: 270px;
+    width: 450px;
+    margin-bottom: 30px;
+    
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+      
+    }
+    
   
     color: var(--primary-text-color);
   }
@@ -33,10 +50,13 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
-    width: 270px;
+    width: 450px;
     height: 120px;
   
     background-color: #f5f4fa;
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
   
   .preferences__icon-picture {

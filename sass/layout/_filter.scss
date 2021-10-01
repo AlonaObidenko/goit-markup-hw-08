@@ -1,9 +1,12 @@
 .filter {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    //justify-content: center;
+    //margin-bottom: 50px;
+    margin-bottom: 40px;
 
-    &-item:not(:last-child) {
+    //&-item:not(:last-child) {
       margin-right: 8px;
     }
   }
