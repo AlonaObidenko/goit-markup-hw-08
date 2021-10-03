@@ -601,6 +601,12 @@ a {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .preferences {
+    flex-wrap: unset;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .preferences .preferences__item {
     width: calc((100% - 60px) / 2);
@@ -742,9 +748,6 @@ a {
 @media screen and (min-width: 768px) and (min-width: 1200px) {
   .our-team__item {
     width: calc((100%-90px) / 4);
-  }
-  .our-team__item:last-child {
-    margin-right: 0;
   }
 }
 
