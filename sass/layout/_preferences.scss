@@ -1,27 +1,25 @@
-.preferences__item {
-  width: 450px;
-}
 
-@media screen and (min-width: 1200px) {
-  .preferences {
-    display: flex;
-  }
+.preferences {
+  @media screen and (min-width: 768px) {
+ display: flex;
+ flex-wrap: wrap;
+ margin: -15px;
+}
+}
 
   .preferences .preferences__item {
     @media screen and (min-width: 768px) {
-      flex-basis: calc((100% - 60px) / 2);
-      display: flex;
-      margin-right: 10px;
-      margin-top: 10px;
+      width: calc((100% - 60px) / 2);
+      margin: 15px;
     }
 
-    &:last-child {
-      @media screen and (min-width: 768px) {
-      margin-right: 0;
-    }
-  }
+    //&:last-child {
+      //@media screen and (min-width: 768px) {
+      //margin-right: 0;
+    //}
+  //}
 }
-}
+
 
   .preferences__title {
     width: 270px;
