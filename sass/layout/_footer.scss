@@ -1,16 +1,35 @@
 .footer {
-  padding: 60px 0;
+  padding-top: 60px;
   background-color: #2f303a;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 60px 0;
+  }
 }
 
 .footer {
 .container {
   display: flex;
-  //align-items: baseline;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
+  padding: 0;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+    flex-direction: row;
+  }
+}
+}
+
+.footer-contacts {
+  @media screen and (min-width: 768px) {
+    display: flex;
   }
 }
 
@@ -19,10 +38,18 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-}
+  @media screen and (min-width: 768px) {
+ margin-right: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 0px;
+    align-items: flex-start;
+     }
+  }
 
 .footer__logo {
   display: block;
+  margin: 0;
   padding: 0;
   margin-bottom: 20px;
 
@@ -32,7 +59,7 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
-}
+  }
 
 .adress-variants {
   font-style: normal;
@@ -55,6 +82,9 @@
   &:last-child {
   margin-bottom: 0;
   }
+  @media screen and (width: 1200px) {
+    text-align: start;
+  }
 }
 
 .adress-variants-list__link:hover,
@@ -67,11 +97,9 @@
 }
 
 .social-nets {
-
-  //margin-left: 70px;
-  //margin-left: auto;
- // margin-right: auto;
-
+  @media screen and (min-width: 1200px) {
+  margin-left: 70px;
+}
 }
 .social-nets-list {
   display: flex;
@@ -111,8 +139,15 @@
 }
 
 .subscribe {
-  //margin-left: 93px;
   display: flex;
+  width: 450px;
+  margin-bottom: 55px;
+  justify-content: center;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    width: 570px;
+    margin-left: 93px;
+  }
 }
 
 .social-nets__text,
@@ -122,6 +157,7 @@
   font-weight: 700px;
 
   color: var(--primary-white-color);
+  text-align: start;
 }
 
 .suscribe-form__text,
@@ -130,6 +166,10 @@
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+    text-align: start;
+  }
 }
 
 .subscribe-steps {
@@ -137,9 +177,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  //justify-content: space-between;
+  @media screen and (min-width: 1200px) {
+  justify-content: space-between;
+  align-items: baseline;
   width: 570px;
-  //margin-top: 20px;
+  margin-top: 20px;
+  flex-direction: unset;
+ // flex-direction: row;
+}
 }
 
 .subscribe-steps__email {
@@ -148,13 +193,19 @@
   padding-top: 15px;
   padding-bottom: 15px;
   margin-bottom: 20px;
-  width: 358px;
+  width: 460px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: transparent;
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+  width: 358px;
+}
 }
 
 .mail::placeholder {
