@@ -804,8 +804,10 @@ a {
   margin: -15px;
 }
 
-@media screen and (width: 1200) {
+@media screen and (min-width: 1200px) {
   .clients {
+    flex-wrap: unset;
+    display: flex;
     justify-content: center;
     align-items: center;
   }
@@ -813,19 +815,24 @@ a {
 
 .clients__item {
   height: 92px;
-  flex-basis: calc 20%;
+  flex-basis: calc((100% - 60px) / 2);
   margin: 15px;
 }
 
-@media screen and (width: 1200) {
+.clients__item:last-child {
+  margin-right: 0;
+}
+
+@media screen and (min-width: 768px) {
   .clients__item {
-    flex-wrap: unset;
-    width: 170px;
-    margin: 0;
-    margin-right: 30px;
+    flex-basis: calc((100% - 90px) / 3);
   }
-  .clients__item:last-child {
-    margin-right: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    width: 170px;
+    margin-right: 30px;
   }
 }
 
@@ -855,11 +862,17 @@ a {
 
 .footer .container {
   display: flex;
-  align-items: baseline;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .footer-adress {
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .footer__logo {
@@ -876,6 +889,7 @@ a {
 
 .adress-variants {
   font-style: normal;
+  margin-bottom: 60px;
 }
 
 .adress-variants-list__item {
@@ -904,14 +918,8 @@ a {
   color: var(--primary-white-color);
 }
 
-.social-nets {
-  margin-left: 70px;
-}
-
 .social-nets-list {
   display: flex;
-  justify-content: center;
-  align-content: center;
   margin-top: 20px;
 }
 
@@ -923,6 +931,7 @@ a {
 
 .social-nets-list__item:last-child {
   margin-right: 0px;
+  margin-bottom: 60px;
 }
 
 .social-nets-list__link {
@@ -944,12 +953,12 @@ a {
 }
 
 .subscribe {
-  margin-left: 93px;
   display: flex;
 }
 
 .social-nets__text,
 .suscribe-form__text {
+  text-align: center;
   font-size: 14px;
   font-weight: 700px;
   color: var(--primary-white-color);
@@ -958,13 +967,17 @@ a {
 .suscribe-form__text,
 .email {
   display: block;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .subscribe-steps {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 570px;
-  margin-top: 20px;
 }
 
 .subscribe-steps__email {
@@ -972,6 +985,7 @@ a {
   padding-left: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
+  margin-bottom: 20px;
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
