@@ -51,12 +51,49 @@
                         +38 096 111 11 11</a>
                     </li>
             </ul>
-            <button class="menu-open">
-                <svg class="menu-open__icon" width="24" height="16">
-                    <use href="./images/icons.svg#icon-menu"> </use>
-                </svg>
-            </button>
         </div>
+
+        <button class="menu-open" data-menu-open>
+            <svg class="menu-open__icon" width="24" height="16">
+                <use href="./images/icons.svg#icon-menu"> </use>
+            </svg>
+        </button>
+        <div class="mob-menu is-hidden" data-menu>
+            <ul class="mob-menu-list">
+                <li class="mob-menu-list__item"><a href="./index.html" class="mob-menu-list__link mob-menu-list__link--current">Студия</a></li>
+                <li class="mob-menu-list__item"><a href="./portfolio.html" class="mob-menu-list__link">Портфолио</a></li>
+                <li class="mob-menu-list__item"><a href="" class="mob-menu-list__link">Контакты</a></li>
+        </ul>
+    
+        <button type="button" class="modal-mob__btn-close" data-menu-close>
+            <svg class="btn-close__icon" width="11px" height="11px">
+                <use href="./images/icons.svg#close"> </use>
+            </svg>
+        </button>
+        <div class="mob-adresses">
+        <ul class="mob-contacts">
+            <li class="mob-contacts__item">
+                <a href="tel:+380961111111" class="mob-contacts__link mob-tel">
+                    +38 096 111 11 11</a>
+                </li>
+                <li class="mob-contacts__item">
+                    <a href="mailto:info@devstudio.com"
+                        class="mob-contacts__link mob-mail">
+                        info@devstudio.com</a>
+                </li>
+        </ul>
+    
+        
+        <ul class="mob-nets">
+            <li class="mob-nets__item">
+                <a href="" class="mob-nets__link">Instagram</a></li>
+            <li class="mob-nets__item"><a href="" class="mob-nets__link">Twitter</a></li>
+            <li class="mob-nets__item"><a href="" class="mob-nets__link">Facebook</a></li>
+            <li class="mob-nets__item"><a href="" class="mob-nets__link">LinkedIn</a></li>
+        </ul>
+    </div>
+        </div>
+
     </header>
 
     <main>
@@ -565,11 +602,7 @@
     
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="button" class="modal__btn-close" data-modal-close>
-                <svg class="btn-close__icon" width="11px" height="11px">
-                    <use href="./images/icons.svg#close"> </use>
-                </svg>
-            </button>
+
             <form class="modal-form">
                 <b class="modal-form__text">Оставьте свои данные, мы вам перезвоним</b>
 

@@ -1,19 +1,28 @@
   .projects {
+    @media screen and (min-width:768px) {
     display: flex;
     flex-wrap: wrap;
     margin-right: -30px;
     margin-top: -30px;
   }
+  }
   
   .projects__item {
     display: flex;
-    flex-basis: calc((100% - 90px) / 3);
-    margin-right: 30px;
+    width: 450px;
+    
     margin-top: 30px;
-  
     background: #ffffff;
     box-sizing: border-box;
-  
+
+    @media screen and (min-width:768px) {
+      width: 354px;
+      flex-basis: calc((100% - 60px) / 2);
+      margin-right: 30px;
+    }
+    @media screen and (min-width:1200px) {
+      flex-basis: calc((100% - 90px) / 3);
+    }
   }
   
   .projects__link {
@@ -77,4 +86,4 @@
       transform: translateY(0);
     }
   }
-  
+
