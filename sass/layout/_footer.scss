@@ -64,6 +64,9 @@
 .adress-variants {
   font-style: normal;
   margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 
 .adress-variants-list__item {
@@ -167,6 +170,7 @@
   margin-bottom: 20px;
   @media screen and (min-width: 768px) {
     margin-top: 0;
+    text-align: start;
   }
 }
 
