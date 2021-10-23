@@ -739,9 +739,10 @@ a {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
   .preferences .preferences__item:last-child {
     margin-right: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -1027,6 +1028,7 @@ a {
 @media screen and (min-width: 1200px) {
   .footer-adress {
     align-items: flex-start;
+    margin-right: 0;
   }
 }
 
