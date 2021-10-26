@@ -184,7 +184,7 @@ a {
 }
 
 .modal-form-field {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .modal-form-field__label {
@@ -262,6 +262,7 @@ a {
   font-size: 14px;
   line-height: calc(24/14);
   letter-spacing: 0.03em;
+  margin-top: 30px;
   cursor: pointer;
   fill: var(--primary-white-color);
 }
@@ -290,7 +291,6 @@ a {
 .modal-form__submit-btn {
   padding: 10px 55px;
   margin: 0 auto;
-  margin-top: 30px;
 }
 
 .backdrop {
@@ -311,7 +311,6 @@ a {
 .social {
   display: flex;
   justify-content: center;
-  margin-top: 16px;
 }
 
 .icon-nets__link {
@@ -417,7 +416,7 @@ a {
   content: '';
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
   width: 100%;
   height: 4px;
   border-radius: 2px;
@@ -722,26 +721,14 @@ a {
   }
 }
 
-.preferences .preferences__item:not(:last-child) {
-  margin-bottom: 30px;
+.preferences .preferences__item {
+  margin: 15px;
 }
 
 @media screen and (min-width: 768px) {
   .preferences .preferences__item {
     width: calc((100% - 60px) / 2);
     margin: 15px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .preferences .preferences__item {
-    margin-right: 30px;
-  }
-}
-
-@media screen and (min-width: 1200px) and (min-width: 1200px) {
-  .preferences .preferences__item:last-child {
-    margin-right: 0;
   }
 }
 
@@ -878,9 +865,6 @@ a {
   .our-team .our-team__item {
     width: calc((100% - 90px) / 4);
   }
-  .our-team .our-team__item:last-child {
-    margin-right: 0;
-  }
 }
 
 .our-team__content {
@@ -904,6 +888,7 @@ a {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin-bottom: 16px;
   color: var(--primary-text-color);
 }
 
@@ -983,13 +968,8 @@ a {
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
-  padding: 0;
-}
-
-@media screen and (min-width: 768px) {
-  .footer .container {
-    padding-bottom: 0;
-  }
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1028,6 +1008,7 @@ a {
   .footer-adress {
     align-items: flex-start;
     margin-right: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -1151,7 +1132,7 @@ a {
 .suscribe-form__text {
   text-align: center;
   font-size: 14px;
-  font-weight: 700px;
+  font-weight: 700;
   color: var(--primary-white-color);
 }
 
@@ -1214,6 +1195,7 @@ a {
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: transparent;
+  color: var(--primary-white-color);
 }
 
 @media screen and (min-width: 768px) {

@@ -46,7 +46,7 @@
   }
   
   .modal-form-field {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   
   .modal-form-field__label {
@@ -128,6 +128,7 @@
   font-size: 14px;
   line-height: calc(24/14);
   letter-spacing: 0.03em;
+  margin-top: 30px;
   cursor: pointer;
   fill: var(--primary-white-color);
   }
@@ -160,7 +161,6 @@
   .modal-form__submit-btn {
     padding: 10px 55px;
     margin: 0 auto;
-    margin-top: 30px;
   }
   
   
