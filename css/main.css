@@ -742,7 +742,6 @@ a {
 @media screen and (min-width: 1200px) and (min-width: 1200px) {
   .preferences .preferences__item:last-child {
     margin-right: 0;
-    margin-bottom: 0;
   }
 }
 
