@@ -362,6 +362,7 @@ a {
 }
 
 .header .container {
+  justify-content: space-between;
   display: flex;
   align-items: center;
 }
@@ -503,8 +504,6 @@ a {
 }
 
 .menu-open {
-  margin-top: 10px;
-  margin-right: 10px;
   background: transparent;
 }
 
@@ -734,7 +733,8 @@ a {
 @media screen and (min-width: 768px) {
   .preferences .preferences__item {
     width: calc((100% - 60px) / 2);
-    margin: 15px;
+    margin: 0;
+    margin-bottom: 15px;
   }
 }
 
@@ -772,7 +772,6 @@ a {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  width: 450px;
   height: 120px;
   background-color: #f5f4fa;
 }
