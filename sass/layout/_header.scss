@@ -90,6 +90,9 @@
     line-height: 1.16;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
     @media screen and (min-width: 1200px) {
       font-size: 14px;
       &:not(:last-child) {
@@ -99,10 +102,6 @@
   }
 }
   .contacts__link {
-    @media screen and (min-width: 768px) {
-      padding: 5px 0;
-      }
-    
     @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
@@ -127,6 +126,7 @@
     }
   }
   .menu-open {
+    display: block;
     background: transparent;
     @media screen and (min-width: 768px) {
       display: none;

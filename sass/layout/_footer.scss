@@ -31,23 +31,29 @@
   @media screen and (min-width: 768px) {
    
     display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: unset;
+    margin-bottom: 0;
+    width: unset;
   }
 }
 
 .footer-adress {
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
   text-align: center;
   margin-bottom: 60px;
   @media screen and (min-width: 768px) {
-    margin-right: 165px;
     margin-bottom: 0;
   }
   @media screen and (min-width: 1200px) {
     align-items: flex-start;
     margin-right: 0;
     margin-bottom: 0;
+    flex-grow: 1;
      }
   }
 
@@ -145,7 +151,7 @@
 
 .subscribe {
   display: flex;
-  width: 450px;
+  //width: 450px;
   margin-bottom: 55px;
   justify-content: center;
   text-align: center;
@@ -153,7 +159,7 @@
     margin-bottom: 0;
   }
   @media screen and (min-width: 1200px) {
-    width: 570px;
+    //width: 570px;
     margin-left: 93px;
     margin-bottom: 0;
   }
@@ -206,7 +212,7 @@
   padding-top: 15px;
   padding-bottom: 15px;
   margin-bottom: 20px;
-  width: 460px;
+  //width: 460px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -215,10 +221,10 @@
   background-color: transparent;
   color: var(--primary-white-color);
   @media screen and (min-width: 768px) {
-    width: 450px;
+  //width: 450px;
   }
   @media screen and (min-width: 1200px) {
-  width: 358px;
+  //width: 358px;
   margin-bottom: 0;
 }
 }
@@ -234,7 +240,7 @@ color: rgba(255, 255, 255, 0.6);
 .subscribe-steps__submit-btn,
 .modal-form__submit-btn {
   display: block;
-  min-width: 200px;
+  //min-width: 200px;
   border-radius: 4px;
 
   padding: 10px 62px 10px 29px;
