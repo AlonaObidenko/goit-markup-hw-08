@@ -5,7 +5,7 @@
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.2);
     top: 0;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity var(--transition-duration) var(--transition-effect), visibility var(--transition-duration) var(--transition-effect);
       
     &.is-hidden {
       opacity: 0;
