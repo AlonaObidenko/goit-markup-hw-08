@@ -212,7 +212,7 @@
   padding-top: 15px;
   padding-bottom: 15px;
   margin-bottom: 20px;
-  //width: 460px;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -221,10 +221,10 @@
   background-color: transparent;
   color: var(--primary-white-color);
   @media screen and (min-width: 768px) {
-  //width: 450px;
+  width: 450px;
   }
   @media screen and (min-width: 1200px) {
-  min-width: 358px;
+  width: 358px;
   margin-bottom: 0;
 }
 }
