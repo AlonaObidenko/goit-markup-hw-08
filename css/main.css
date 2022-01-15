@@ -152,17 +152,16 @@ a {
   background-color: var(--primary-white-color);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .modal {
     width: 450px;
-    height: 609px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
-    height: 581px;
+    max-width: 528px;
+    min-height: 581px;
   }
 }
 
