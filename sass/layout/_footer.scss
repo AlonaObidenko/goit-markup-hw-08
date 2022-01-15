@@ -224,7 +224,7 @@
   //width: 450px;
   }
   @media screen and (min-width: 1200px) {
-  //width: 358px;
+  min-width: 358px;
   margin-bottom: 0;
 }
 }
@@ -237,8 +237,7 @@ letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
 }
 
-.subscribe-steps__submit-btn,
-.modal-form__submit-btn {
+.subscribe-steps__submit-btn {
   display: block;
   //min-width: 200px;
   border-radius: 4px;
