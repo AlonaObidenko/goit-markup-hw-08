@@ -14,6 +14,10 @@
   }
 }
 
+.our-team__item {
+  max-width: 450px;
+}
+
 .our-team .our-team__item {
   &:not(:last-child) {
   margin-bottom: 30px;
