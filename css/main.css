@@ -710,6 +710,7 @@ a {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
+  width: 360px;
   text-align: center;
   font-weight: 900;
   font-size: 26px;
@@ -717,6 +718,12 @@ a {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
+}
+
+@media screen and (min-width: 768px) {
+  .hero__title {
+    width: 360px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
