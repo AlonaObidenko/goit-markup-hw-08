@@ -156,6 +156,7 @@
     padding-bottom: 48px;
     display: flex;
     flex-wrap: wrap;
+    z-index: 1;
     
     background-color: var(--primary-white-color);
     @media screen and (min-width: 768px) {
