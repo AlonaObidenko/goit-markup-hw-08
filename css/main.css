@@ -277,12 +277,18 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 14px;
+  font-size: 12px;
   line-height: calc(24/14);
   letter-spacing: 0.03em;
   margin-top: 30px;
   cursor: pointer;
   fill: var(--primary-white-color);
+}
+
+@media screen and (min-width: 768px) {
+  .modal-form-field__check-label {
+    font-size: 14px;
+  }
 }
 
 .modal-form-field__checkbox:checked + .modal-form-field__check-label > .modal-form-field__icon-check {
