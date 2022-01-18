@@ -285,7 +285,7 @@ a {
   fill: var(--primary-white-color);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .modal-form-field__check-label {
     font-size: 14px;
   }
